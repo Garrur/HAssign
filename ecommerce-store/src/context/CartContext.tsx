@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { CartItem, Product } from '../types';
+import { CartItem } from '../types';
 import { 
   getCart, 
   addToCart as apiAddToCart, 
