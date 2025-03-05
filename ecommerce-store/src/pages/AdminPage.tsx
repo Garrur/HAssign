@@ -130,7 +130,7 @@ const AdminPage: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <p className="text-sm font-medium text-gray-500">Total Purchase Amount</p>
-                  <h3 className="text-xl font-semibold text-gray-900">${stats.totalPurchaseAmount.toFixed(2)}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">₹{stats.totalPurchaseAmount.toFixed(2)}</h3>
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@ const AdminPage: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <p className="text-sm font-medium text-gray-500">Total Discount Amount</p>
-                  <h3 className="text-xl font-semibold text-gray-900">${stats.totalDiscountAmount.toFixed(2)}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">₹{stats.totalDiscountAmount.toFixed(2)}</h3>
                 </div>
               </div>
             </div>
@@ -269,10 +269,10 @@ const AdminPage: React.FC = () => {
                               {order.items.reduce((sum, item) => sum + item.quantity, 0)}
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                              ${order.finalAmount.toFixed(2)}
+                            ₹{order.finalAmount.toFixed(2)}
                               {order.discountAmount > 0 && (
                                 <span className="ml-1 text-xs text-green-600">
-                                  (Saved ${order.discountAmount.toFixed(2)})
+                                  (Saved ₹{order.discountAmount.toFixed(2)})
                                 </span>
                               )}
                             </td>

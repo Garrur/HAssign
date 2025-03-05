@@ -103,7 +103,7 @@ const OrderConfirmationPage: React.FC = () => {
                   </div>
                 </div>
                 <p className="text-sm font-medium text-gray-900">
-                  ${(item.product.price * item.quantity).toFixed(2)}
+                ₹{(item.product.price * item.quantity).toFixed(2)}
                 </p>
               </div>
             ))}
@@ -112,19 +112,19 @@ const OrderConfirmationPage: React.FC = () => {
           <div className="mt-8 space-y-2">
             <div className="flex justify-between">
               <p className="text-sm text-gray-600">Subtotal</p>
-              <p className="text-sm font-medium text-gray-900">${order.totalAmount.toFixed(2)}</p>
+              <p className="text-sm font-medium text-gray-900">₹{order.totalAmount.toFixed(2)}</p>
             </div>
             
             {order.discountAmount > 0 && (
               <div className="flex justify-between text-green-600">
                 <p className="text-sm">Discount {order.discountCode && `(${order.discountCode})`}</p>
-                <p className="text-sm font-medium">-${order.discountAmount.toFixed(2)}</p>
+                <p className="text-sm font-medium">-₹{order.discountAmount.toFixed(2)}</p>
               </div>
             )}
             
             <div className="border-t border-gray-200 pt-2 flex justify-between">
               <p className="text-base font-medium text-gray-900">Total</p>
-              <p className="text-base font-medium text-gray-900">${order.finalAmount.toFixed(2)}</p>
+              <p className="text-base font-medium text-gray-900">₹{order.finalAmount.toFixed(2)}</p>
             </div>
           </div>
         </div>
