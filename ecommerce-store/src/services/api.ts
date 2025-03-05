@@ -8,7 +8,7 @@ let products: Product[] = [
     name: 'Wireless Headphones',
     price: 999.99,
     description: 'Premium wireless headphones with noise cancellation',
-    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+    image: 'https://images.unsplash.com/photo-1491927570842-0261e477d937?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2lyZWxlc3MlMjBoZWFkcGhvbmVzfGVufDB8fDB8fHww',
   },
   {
     id: '2',
@@ -36,7 +36,7 @@ let products: Product[] = [
     name: 'Wireless Charger',
     price: 299.99,
     description: 'Fast wireless charger for smartphones',
-    image: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+    image: 'https://media.istockphoto.com/id/1215029140/photo/modern-smart-phone-wireless-charging-on-carbon-fibre-surface.webp?a=1&b=1&s=612x612&w=0&k=20&c=cuUdZEj6-gJE36T2gNRykV638T83HCXL_Ah0VSyTQBc=',
   },
 ];
 
